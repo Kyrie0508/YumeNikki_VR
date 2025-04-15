@@ -4,7 +4,129 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047255b9-ac90-48fc-ba8c-f9a9336098d3" name="Changes" comment="" />
+    <list default="true" id="047255b9-ac90-48fc-ba8c-f9a9336098d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YumeNikki_VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YumeNikki_VR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/3dobjects_FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/3dobjects_FBX/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/3dobjects_FBX/Materials/books-book.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/3dobjects_FBX/Materials/books-book.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/3dobjects_FBX/Materials/books.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/3dobjects_FBX/Materials/books.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/3dobjects_FBX/books.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/3dobjects_FBX/books.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs/book_0001a.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs/book_0001a.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs/book_0001b.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs/book_0001b.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs/book_0001c.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs/book_0001c.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs/book_0001d.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Prefabs/book_0001d.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Textures/books.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Books/Textures/books.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Audio/Door_Close.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Audio/Door_Close.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Audio/Door_Open.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Audio/Door_Open.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Black.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Black.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Brown.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Brown.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Coffe.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Coffe.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Milk.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Milk.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Venge.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Venge.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_White.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Yellow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Materials/Door_1_Materials/Door_1_Yellow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh/Knob_1.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh/Knob_1.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh/Knob_2.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh/Knob_2.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh/Knob_3.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh/Knob_3.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh/Wood_Door.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Mesh/Wood_Door.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Black.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Black.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Coffe.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Coffe.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Milk.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Milk.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Venge.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Venge.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Yellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Prefab/Wood/Door_1/Door_1_Yellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Script.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Script/CameraOpenDoor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Script/CameraOpenDoor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Script/Door.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Script/Door.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Script/FPSController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Script/FPSController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1/Door_1_AO.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1/Door_1_AO.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1/Door_1_Albedo.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1/Door_1_Albedo.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1/Door_1_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1/Door_1_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1/Door_1_Spec.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Door_1/Door_1_Spec.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Materials/BG.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Wood Door Pack/Texture/Materials/BG.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile1_ShaderGraph.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile1_ShaderGraph.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile1_prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile1_prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile2_ShaderGraph.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile2_ShaderGraph.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile2_prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile2_prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile3_ShaderGraph.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile3_ShaderGraph.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile3_prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile3_prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile_0_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile_0_0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile_0_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile_0_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile_0_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/tile/tile_0_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Graffiti World.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Graffiti World.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Graffiti World Shader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Graffiti World Shader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Graffiti World Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skybox/Graffiti World Skybox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,6 +250,8 @@
       <workItem from="1743819511175" duration="1222000" />
       <workItem from="1743919167610" duration="15000" />
       <workItem from="1743950900944" duration="1194000" />
+      <workItem from="1743995126888" duration="5000" />
+      <workItem from="1744737793824" duration="592000" />
     </task>
     <servers />
   </component>

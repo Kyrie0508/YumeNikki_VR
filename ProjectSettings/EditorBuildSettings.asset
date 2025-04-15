@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Graffiti World.unity
     guid: 9c014948aa9367e4fb27792974236e7a
+  - enabled: 1
+    path: Assets/Scenes/Eyeball World.unity
+    guid: 83fb8e278fab7234f82e05c97eff5658
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: db48eba1c6e70054cba8500e6367d8b0,
       type: 2}
