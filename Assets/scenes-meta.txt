@@ -1,0 +1,70 @@
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Built-In Demo.unity.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/HDRP Demo.unity.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/Built-In Demo.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/Built-In Demo/LightingData.asset.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/Built-In Demo/Lightmap-0_comp_dir.png.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/Built-In Demo/Lightmap-0_comp_light.exr.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/Built-In Demo/ReflectionProbe-0.exr.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/Built-In Demo/ReflectionProbe-1.exr.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/HDRP Demo.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/HDRP Demo/LightingData.asset.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/HDRP Demo/Lightmap-0_comp_dir.png.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/HDRP Demo/Lightmap-0_comp_light.exr.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/HDRP Demo/ReflectionProbe-0.exr.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/URP Demo.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/URP Demo/LightingData.asset.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/URP Demo/Lightmap-0_comp_dir.png.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/URP Demo/Lightmap-0_comp_light.exr.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/URP Demo/ReflectionProbe-0.exr.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/Lightmaps/URP Demo/ReflectionProbe-1.exr.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/PostProcess Profiles.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/PostProcess Profiles/HDRP PostProcess.asset.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/PostProcess Profiles/URP PostProcess.asset.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/RP Settings.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/RP Settings/HDRP  Asset Settings.asset.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/RP Settings/URP Asset Settings.asset.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/RP Settings/UniversalRenderPipelineAsset_Renderer.asset.meta
+Add_Assets/BasicBedroomPack-Mavi3D/DemoScenes/URP Demo.unity.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/DemoScenes.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/DemoScenes/Built-In RP DemoScene.unity.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/DemoScenes/HDRP DemoScene.unity.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/DemoScenes/URP DemoScene.unity.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/Built-In.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/Built-In/LightingData.asset.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/Built-In/Lightmap-0_comp_dir.png.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/Built-In/Lightmap-0_comp_light.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/Built-In/ReflectionProbe-0.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/Built-In/ReflectionProbe-1.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/HDRP.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/HDRP/LightingData.asset.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/HDRP/Lightmap-0_comp_dir.png.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/HDRP/Lightmap-0_comp_light.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/HDRP/Lightmap-1_comp_dir.png.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/HDRP/Lightmap-1_comp_light.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/HDRP/ReflectionProbe-0.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/URP.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/URP/LightingData.asset.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/URP/Lightmap-0_comp_dir.png.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/URP/Lightmap-0_comp_light.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/URP/ReflectionProbe-0.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/LightMaps_ReflectionProbes/URP/ReflectionProbe-1.exr.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/Lighting Settings.lighting.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/Postprocess Profiles.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/Postprocess Profiles/HDRP Postprocess.asset.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/Postprocess Profiles/URP Postprocess.asset.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/RenderPipelineAssets.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/RenderPipelineAssets/HDRP Asset.asset.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/RenderPipelineAssets/UniversalRenderPipelineAsset.asset.meta
+Add_Assets/HotelRoom-Mavi3D/DemoScenes_Settings/RenderPipelineAssets/UniversalRenderPipelineAsset_Renderer.asset.meta
+Add_Assets/Surveillance Camera/Surveillance Camera/Scenes.meta
+Add_Assets/Surveillance Camera/Surveillance Camera/Scenes/Demo.unity.meta
+Scenes.meta
+Scenes/Basic Room.unity.meta
+Scenes/Ideal Room.unity.meta
+Scenes/Outside.unity.meta
+UnityTechnologies/Basic Asset Pack Interior/Scenes.meta
+UnityTechnologies/Basic Asset Pack Interior/Scenes/Prefabs.unity.meta
