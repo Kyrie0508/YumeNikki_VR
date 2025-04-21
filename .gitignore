@@ -1,6 +1,12 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
+# Paid Assets
+Assets/Argyle/
+Assets/Argyle.meta
+Assets/TaigaInteractive/
+Assets/TaigaInteractive.meta
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
