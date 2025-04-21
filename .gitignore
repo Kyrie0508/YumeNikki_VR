@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> fdc67d2 (First Commmit)
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -79,8 +83,12 @@ fabric.properties
 
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> eb2e76d (Yeowon)
+=======
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
@@ -158,4 +166,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 =======
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+<<<<<<< HEAD
 >>>>>>> eb2e76d (Yeowon)
+=======
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)

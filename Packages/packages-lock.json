@@ -98,6 +98,9 @@
       "url": "https://packages.unity.com"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fdc67d2 (First Commmit)
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -125,8 +128,11 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
 =======
 >>>>>>> eb2e76d (Yeowon)
+=======
+>>>>>>> fdc67d2 (First Commmit)
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 2,
@@ -361,12 +367,25 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.xr.oculus": {
+      "version": "4.5.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.management": "4.4.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.xr.openxr": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "version": "1.14.2",
 =======
       "version": "1.14.1",
 >>>>>>> eb2e76d (Yeowon)
+=======
+      "version": "1.14.2",
+>>>>>>> fdc67d2 (First Commmit)
       "depth": 0,
       "source": "registry",
       "dependencies": {

@@ -10,11 +10,19 @@ Preset:
   m_TargetType:
     m_NativeTypeID: 114
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ManagedTypePPtr: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
 =======
     m_ManagedTypePPtr: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221,
       type: 3}
 >>>>>>> eb2e76d (Yeowon)
+=======
+    m_ManagedTypePPtr: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221,
+      type: 3}
+=======
+    m_ManagedTypePPtr: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)
     m_ManagedTypeFallback: 
   m_Properties:
   - target: {fileID: 0}
@@ -105,11 +113,19 @@ Preset:
     propertyPath: m_PositionAction.m_Reference
     value: 
 <<<<<<< HEAD
+<<<<<<< HEAD
     objectReference: {fileID: 3220680263695665919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 =======
     objectReference: {fileID: 3220680263695665919, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
 >>>>>>> eb2e76d (Yeowon)
+=======
+    objectReference: {fileID: 3220680263695665919, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+=======
+    objectReference: {fileID: 3220680263695665919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)
   - target: {fileID: 0}
     propertyPath: m_RotationAction.m_UseReference
     value: 1
@@ -150,11 +166,19 @@ Preset:
     propertyPath: m_RotationAction.m_Reference
     value: 
 <<<<<<< HEAD
+<<<<<<< HEAD
     objectReference: {fileID: -5930349909990434036, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 =======
     objectReference: {fileID: -5930349909990434036, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
 >>>>>>> eb2e76d (Yeowon)
+=======
+    objectReference: {fileID: -5930349909990434036, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+=======
+    objectReference: {fileID: -5930349909990434036, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)
   - target: {fileID: 0}
     propertyPath: m_IsTrackedAction.m_UseReference
     value: 1
@@ -195,11 +219,19 @@ Preset:
     propertyPath: m_IsTrackedAction.m_Reference
     value: 
 <<<<<<< HEAD
+<<<<<<< HEAD
     objectReference: {fileID: -831106814531524825, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 =======
     objectReference: {fileID: -831106814531524825, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
 >>>>>>> eb2e76d (Yeowon)
+=======
+    objectReference: {fileID: -831106814531524825, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+=======
+    objectReference: {fileID: -831106814531524825, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)
   - target: {fileID: 0}
     propertyPath: m_TrackingStateAction.m_UseReference
     value: 1
@@ -240,11 +272,19 @@ Preset:
     propertyPath: m_TrackingStateAction.m_Reference
     value: 
 <<<<<<< HEAD
+<<<<<<< HEAD
     objectReference: {fileID: 2069149553511882089, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 =======
     objectReference: {fileID: 2069149553511882089, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
 >>>>>>> eb2e76d (Yeowon)
+=======
+    objectReference: {fileID: 2069149553511882089, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+=======
+    objectReference: {fileID: 2069149553511882089, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)
   - target: {fileID: 0}
     propertyPath: m_SelectAction.m_UseReference
     value: 0
@@ -504,10 +544,17 @@ Preset:
   - target: {fileID: 0}
     propertyPath: m_UIScrollAction.m_Action.m_Id
 <<<<<<< HEAD
+<<<<<<< HEAD
     value: 
 =======
     value: 6b89de28-127a-4c6e-b32c-4b523a8de85f
 >>>>>>> eb2e76d (Yeowon)
+=======
+    value: 6b89de28-127a-4c6e-b32c-4b523a8de85f
+=======
+    value: 
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_UIScrollAction.m_Action.m_Processors

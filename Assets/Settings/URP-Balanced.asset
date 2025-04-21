@@ -24,10 +24,17 @@ MonoBehaviour:
   m_OpaqueDownsampling: 1
   m_SupportsTerrainHoles: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SupportsHDR: 0
 =======
   m_SupportsHDR: 1
 >>>>>>> eb2e76d (Yeowon)
+=======
+  m_SupportsHDR: 1
+=======
+  m_SupportsHDR: 0
+>>>>>>> d1bd3b34c8ca72d4dc25eae96b248e62937bb13d
+>>>>>>> fdc67d2 (First Commmit)
   m_HDRColorBufferPrecision: 0
   m_MSAA: 1
   m_RenderScale: 1

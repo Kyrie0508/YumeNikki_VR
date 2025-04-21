@@ -1,6 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &-6376192097643248724
 =======
 --- !u!114 &-7088313267020519750
@@ -25,6 +26,9 @@ MonoBehaviour:
   m_InitManagerOnStart: 1
 --- !u!114 &-374133689348629653
 >>>>>>> eb2e76d (Yeowon)
+=======
+--- !u!114 &-6869674783602346425
+>>>>>>> fdc67d2 (First Commmit)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,8 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettingsPerBuildTarget
   m_EditorClassIdentifier: 
-  Keys: 0100000007000000
+  Keys: 0700000001000000
   Values:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - {fileID: 1834532669124814393}
   - {fileID: -6376192097643248724}
@@ -69,6 +74,11 @@ MonoBehaviour:
   - {fileID: -7088313267020519750}
 --- !u!114 &1306662930420373722
 >>>>>>> eb2e76d (Yeowon)
+=======
+  - {fileID: 3923727212483146330}
+  - {fileID: 8561543538619626492}
+--- !u!114 &3923727212483146330
+>>>>>>> fdc67d2 (First Commmit)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,8 +88,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
-  m_Name: Standalone Settings
+  m_Name: Android Settings
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_LoaderManagerInstance: {fileID: -5222566073727974382}
   m_InitManagerOnStart: 1
@@ -89,6 +100,11 @@ MonoBehaviour:
   m_InitManagerOnStart: 1
 --- !u!114 &1840914797889111640
 >>>>>>> eb2e76d (Yeowon)
+=======
+  m_LoaderManagerInstance: {fileID: 4422670836699666071}
+  m_InitManagerOnStart: 1
+--- !u!114 &4422670836699666071
+>>>>>>> fdc67d2 (First Commmit)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,4 +124,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ff15546caca67f4419fbae708473fc2a, type: 2}
 =======
   - {fileID: 11400000, guid: 4bbd1bfdea2b7fb458dab13b0579931e, type: 2}
+<<<<<<< HEAD
 >>>>>>> eb2e76d (Yeowon)
+=======
+--- !u!114 &8561543538619626492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: Standalone Settings
+  m_EditorClassIdentifier: 
+  m_LoaderManagerInstance: {fileID: -6869674783602346425}
+  m_InitManagerOnStart: 1
+>>>>>>> fdc67d2 (First Commmit)

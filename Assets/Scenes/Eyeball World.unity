@@ -443,6 +443,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 31708532}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &31790769
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +572,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> fdc67d2 (First Commmit)
 --- !u!1001 &57523880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13114,4 +13117,7 @@ SceneRoots:
   - {fileID: 109994441}
   - {fileID: 1574915653}
   - {fileID: 866725478}
+<<<<<<< HEAD
   - {fileID: 31790771}
+=======
+>>>>>>> fdc67d2 (First Commmit)

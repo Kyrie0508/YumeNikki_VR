@@ -32,6 +32,8 @@ EditorBuildSettings:
     path: Assets/dark map.unity
     guid: 9285dc70e029d9a418305e910e043bba
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: db48eba1c6e70054cba8500e6367d8b0,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3af25eff40e74f64ba12a6b764ae5dfa,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 7aeacf3e96f04eb438c04fb9bf016f33,
