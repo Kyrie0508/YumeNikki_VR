@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-public class PhotoActivator : MonoBehaviour
+public class TV_glitch : MonoBehaviour
 {
     [Header("🔌 이펙트 오브젝트들")]
     public GameObject sparkEffect;         // 지직거리는 전기 효과 (Particle System 등)
