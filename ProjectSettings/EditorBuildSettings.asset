@@ -8,6 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/WhiteDesert.unity
     guid: 7ce3802b1eaa4b84aa511d1771c6cd98
@@ -23,4 +24,16 @@ EditorBuildSettings:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8ed8f8eb7ffea43b17b4f28c0781ae,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5123488f31a3a0945a92e13681041de6,
+=======
+  - enabled: 0
+    path: Assets/NEW ROAD.unity
+    guid: 508734d18e143b64bae3872b9b33791a
+  - enabled: 1
+    path: Assets/dark map.unity
+    guid: 9285dc70e029d9a418305e910e043bba
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3af25eff40e74f64ba12a6b764ae5dfa,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 7aeacf3e96f04eb438c04fb9bf016f33,
+>>>>>>> eb2e76d (Yeowon)
       type: 2}

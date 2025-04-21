@@ -97,6 +97,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -124,6 +125,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> eb2e76d (Yeowon)
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 2,
@@ -359,7 +362,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.openxr": {
+<<<<<<< HEAD
       "version": "1.14.2",
+=======
+      "version": "1.14.1",
+>>>>>>> eb2e76d (Yeowon)
       "depth": 0,
       "source": "registry",
       "dependencies": {

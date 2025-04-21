@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 96ad1b14172e8bb4b98f07c7c7ac52a9
+=======
+guid: a5230aeb3f5e3224b8a5a1820980ef66
+>>>>>>> eb2e76d (Yeowon)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
+<<<<<<< HEAD
   productGUID: c3c954c0cf2f48b4d9eacf6e26c9c28f
+=======
+  productGUID: 067ac48076f0a774ab6488400ff29b9c
+>>>>>>> eb2e76d (Yeowon)
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +17,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
+<<<<<<< HEAD
   productName: YumeNikki_VR
+=======
+  productName: My project (2)
+>>>>>>> eb2e76d (Yeowon)
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -46,7 +54,11 @@ PlayerSettings:
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
+<<<<<<< HEAD
   m_StereoRenderingPath: 2
+=======
+  m_StereoRenderingPath: 0
+>>>>>>> eb2e76d (Yeowon)
   m_ActiveColorSpace: 1
   unsupportedMSAAFallback: 0
   m_SpriteBatchVertexThreshold: 300
@@ -142,7 +154,11 @@ PlayerSettings:
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1.0
   preloadedAssets:
+<<<<<<< HEAD
   - {fileID: 11400000, guid: 54d5bdc2fa999c840b6287e651bd0179, type: 2}
+=======
+  - {fileID: 11400000, guid: c2d24af28bcf71144ba387253fbe7bbf, type: 2}
+>>>>>>> eb2e76d (Yeowon)
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -173,8 +189,13 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
+<<<<<<< HEAD
   AndroidMinSdkVersion: 32
   AndroidTargetSdkVersion: 32
+=======
+  AndroidMinSdkVersion: 29
+  AndroidTargetSdkVersion: 0
+>>>>>>> eb2e76d (Yeowon)
   AndroidPreferredInstallLocation: 0
   aotOptions: 
   stripEngineCode: 1
@@ -519,12 +540,17 @@ PlayerSettings:
       m_SubKind: 
   m_BuildTargetBatching: []
   m_BuildTargetShaderSettings: []
+<<<<<<< HEAD
   m_BuildTargetGraphicsJobs:
   - m_BuildTarget: AndroidPlayer
     m_GraphicsJobs: 1
   m_BuildTargetGraphicsJobMode:
   - m_BuildTarget: AndroidPlayer
     m_GraphicsJobMode: 1
+=======
+  m_BuildTargetGraphicsJobs: []
+  m_BuildTargetGraphicsJobMode: []
+>>>>>>> eb2e76d (Yeowon)
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: iOSSupport
     m_APIs: 10000000
@@ -532,9 +558,12 @@ PlayerSettings:
   - m_BuildTarget: AndroidPlayer
     m_APIs: 0b000000
     m_Automatic: 0
+<<<<<<< HEAD
   - m_BuildTarget: WindowsStandaloneSupport
     m_APIs: 02000000
     m_Automatic: 0
+=======
+>>>>>>> eb2e76d (Yeowon)
   m_BuildTargetVRSettings: []
   m_DefaultShaderChunkSizeInMB: 16
   m_DefaultShaderChunkCount: 0
@@ -819,14 +848,22 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
+<<<<<<< HEAD
     Android: ISDK_OPENXR_HAND;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
     Standalone: ISDK_OPENXR_HAND;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+=======
+    Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;ISDK_OPENXR_HAND
+    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;ISDK_OPENXR_HAND
+>>>>>>> eb2e76d (Yeowon)
     Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
+<<<<<<< HEAD
     Standalone: 1
+=======
+>>>>>>> eb2e76d (Yeowon)
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   managedStrippingLevel:
@@ -855,14 +892,22 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
+<<<<<<< HEAD
   metroPackageName: YumeNikki_VR
+=======
+  metroPackageName: My project (2)
+>>>>>>> eb2e76d (Yeowon)
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
+<<<<<<< HEAD
   metroApplicationDescription: YumeNikki_VR
+=======
+  metroApplicationDescription: My project (2)
+>>>>>>> eb2e76d (Yeowon)
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -932,11 +977,19 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
+<<<<<<< HEAD
   cloudProjectId: c1e16aa0-2419-4637-a8b3-806475b450bb
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: YumeNikki_VR 2025-03-31_23-30-36
   organizationId: ssss3044
+=======
+  cloudProjectId: fc7fd109-26cb-45d3-ad8e-a7d1dc3ce380
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsNames: []
+  projectName: My project (2)
+  organizationId: yeowon811
+>>>>>>> eb2e76d (Yeowon)
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
