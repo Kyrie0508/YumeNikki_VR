@@ -27,7 +27,7 @@
                     "name": "Is Tracked",
                     "type": "Button",
                     "id": "6bb4e248-e42b-47c3-b66c-79566508ca74",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -349,7 +349,7 @@
                     "name": "Is Tracked",
                     "type": "Button",
                     "id": "82eb6741-beef-48d3-83ab-a957dc1caa1e",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -687,7 +687,7 @@
                     "name": "Select",
                     "type": "Button",
                     "id": "33754c03-48ec-46ef-9bc6-22ed6bfdd8e8",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -705,7 +705,7 @@
                     "name": "Activate",
                     "type": "Button",
                     "id": "0c0991c5-d329-4afc-8892-1076b440477c",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -723,7 +723,7 @@
                     "name": "UI Press",
                     "type": "Button",
                     "id": "7e1eced7-c774-4fe5-be8f-d8711f646d9e",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -751,7 +751,7 @@
                     "type": "Value",
                     "id": "21b75b25-12ad-410f-b4f8-a7745b7aca27",
                     "expectedControlType": "Vector2",
-                    "processors": "ScaleVector2(x=3,y=3)",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
@@ -760,7 +760,7 @@
                     "type": "Value",
                     "id": "bfa204c7-3c92-4193-bad1-39eb71920042",
                     "expectedControlType": "Vector2",
-                    "processors": "ScaleVector2(x=3,y=3)",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
@@ -977,7 +977,7 @@
                     "name": "Teleport Mode Cancel",
                     "type": "Button",
                     "id": "89ce8348-6001-41a3-85b9-f8f2e2dcad7c",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -1483,11 +1483,7 @@
                     "name": "Select",
                     "type": "Button",
                     "id": "ac96c10b-c955-4a46-8e67-bf16bc069b53",
-<<<<<<< HEAD
-                    "expectedControlType": "",
-=======
                     "expectedControlType": "Button",
->>>>>>> 2b9d60c7da20383852f332c9cd26eb12070f9b46
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -1551,7 +1547,7 @@
                     "type": "Value",
                     "id": "9b5d8312-f609-4895-b70f-81a722b2ae11",
                     "expectedControlType": "Vector2",
-                    "processors": "ScaleVector2(x=3,y=3)",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
@@ -1560,7 +1556,7 @@
                     "type": "Value",
                     "id": "6f7cf253-7062-443b-b10f-2be48a33f027",
                     "expectedControlType": "Vector2",
-                    "processors": "ScaleVector2(x=3,y=3)",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
@@ -1805,7 +1801,7 @@
                     "type": "Value",
                     "id": "00a4dc9f-1ee6-4349-b0e9-72d5dccaadd6",
                     "expectedControlType": "Vector2",
-                    "processors": "ScaleVector2(x=2,y=2)",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
