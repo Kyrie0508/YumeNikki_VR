@@ -158,3 +158,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+### JetBrain IDE ###
+.idea/
+
+### VS Code ### 
+.vscode/
+
+### MAC OS ###
+.Ds_Store

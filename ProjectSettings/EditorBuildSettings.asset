@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/Basic Room.unity
     guid: 99c9720ab356a0642a771bea13969a05
+=======
+>>>>>>> 2b9d60c7da20383852f332c9cd26eb12070f9b46
   - enabled: 1
     path: Assets/Scenes/Outside.unity
     guid: 8759cdf3eedd24340a14cda069cc816b
@@ -18,8 +21,15 @@ EditorBuildSettings:
     path: Assets/Scenes/DoorNikki.unity
     guid: 9d79da611d2da402baf3507a5d41846d
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: ca927d730d64a374c9404924ea0c9282
+  - enabled: 1
+    path: Assets/Scenes/Basic Room.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
     path: Assets/Scenes/Graffiti World.unity
     guid: 9c014948aa9367e4fb27792974236e7a
+<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/WhiteDesert.unity
     guid: 7ce3802b1eaa4b84aa511d1771c6cd98
@@ -29,12 +39,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/class_nikki.unity
     guid: 4848d1bee7d1946f4a58262ada74250e
+=======
+>>>>>>> 2b9d60c7da20383852f332c9cd26eb12070f9b46
   - enabled: 0
     path: Assets/Scenes/Eyeball World.unity
     guid: 83fb8e278fab7234f82e05c97eff5658
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: db48eba1c6e70054cba8500e6367d8b0,
       type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8ed8f8eb7ffea43b17b4f28c0781ae,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5123488f31a3a0945a92e13681041de6,

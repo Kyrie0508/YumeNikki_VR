@@ -1483,7 +1483,11 @@
                     "name": "Select",
                     "type": "Button",
                     "id": "ac96c10b-c955-4a46-8e67-bf16bc069b53",
+<<<<<<< HEAD
                     "expectedControlType": "",
+=======
+                    "expectedControlType": "Button",
+>>>>>>> 2b9d60c7da20383852f332c9cd26eb12070f9b46
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
