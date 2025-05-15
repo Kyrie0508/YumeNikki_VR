@@ -36,9 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ROAD MAP.unity
     guid: 63a1c1f1322664a40b0e57e4cf05cf96
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 986ae75ba5ff1304488529805e75eeec
-  - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: ca927d730d64a374c9404924ea0c9282
   - enabled: 1
