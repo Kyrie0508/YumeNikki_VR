@@ -2761,7 +2761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930db370db2e538408f8d62239a46173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Basic Room2
+  nextSceneName: Basic Room Dream
   doorOpenSound: {fileID: 8300000, guid: 1106249ff296b0a4b94e936726c833f4, type: 3}
 --- !u!65 &1429128019
 BoxCollider:
