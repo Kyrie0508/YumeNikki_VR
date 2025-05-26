@@ -3,39 +3,58 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    [Header("UI 설정")]
     public GameObject dialogueUIPrefab;
+    public Vector3 offsetFromCamera = new Vector3(0, 0, 2f);
+
+    [Header("대사 설정")]
+    [TextArea(2, 5)]
+    public string dialogueText = "이건 뭔가 수상한 느낌이야...";
+    public bool playOnSelect = true;
+
     private GameObject dialogueUIInstance;
+    private XRBaseInteractable interactable;
 
     private void OnEnable()
     {
-        GetComponent<XRBaseInteractable>().selectEntered.AddListener(OnSelect);
+        interactable = GetComponent<XRBaseInteractable>();
+        if (interactable != null && playOnSelect)
+            interactable.selectEntered.AddListener(OnSelect);
     }
 
     private void OnDisable()
     {
-        GetComponent<XRBaseInteractable>().selectEntered.RemoveListener(OnSelect);
+        if (interactable != null)
+            interactable.selectEntered.RemoveListener(OnSelect);
     }
 
-    private void OnSelect(SelectEnterEventArgs args)
+    public void OnSelect(SelectEnterEventArgs args)
     {
-        
+        ShowDialogue();
+    }
+
+    public void ShowDialogue()
+    {
+        if (dialogueUIPrefab == null || Camera.main == null)
+            return;
+
         if (dialogueUIInstance == null)
         {
             dialogueUIInstance = Instantiate(dialogueUIPrefab);
 
-            
             Canvas canvas = dialogueUIInstance.GetComponent<Canvas>();
             if (canvas != null)
-            {
                 canvas.worldCamera = Camera.main;
-            }
         }
 
         Transform cam = Camera.main.transform;
-        dialogueUIInstance.transform.position = cam.position + cam.forward * 2.0f;
+        Vector3 pos = cam.position + cam.TransformDirection(offsetFromCamera);
+        dialogueUIInstance.transform.position = pos;
         dialogueUIInstance.transform.LookAt(cam);
         dialogueUIInstance.transform.rotation = Quaternion.LookRotation(dialogueUIInstance.transform.position - cam.position);
 
-        dialogueUIInstance.GetComponent<DialogueUIController>().StartDialogue("이건 뭔가 수상한 느낌이야...");
+        DialogueUIController controller = dialogueUIInstance.GetComponent<DialogueUIController>();
+        if (controller != null)
+            controller.StartDialogue(dialogueText);
     }
 }

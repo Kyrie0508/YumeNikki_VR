@@ -17,24 +17,14 @@ public class TitleButtonController : MonoBehaviour
     public void OnNewGameClicked()
     {
         canvas.SetActive(false);
-        if (instructionCanvas != null)
-            instructionCanvas.SetActive(true);
-
-        if (instructionPanel != null)
-            instructionPanel.SetActive(true);
-
-        if (instructionFlowController != null)
-        {
-           
-            instructionFlowController.ResetFlow();
-        }
-        
+        instructionCanvas?.SetActive(true);
+        instructionPanel?.SetActive(true);
+        instructionFlowController?.ResetFlow();
     }
 
     public void OnDreamClicked()
     {
         Debug.Log("Dream button clicked (미구현)");
-        // TODO: 나중에 구현
     }
 
     public void OnExitClicked()
