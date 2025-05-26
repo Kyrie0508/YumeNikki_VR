@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class EndingController : MonoBehaviour
@@ -70,6 +71,10 @@ public class EndingController : MonoBehaviour
         {
             animator.SetTrigger("StartCredit");
         }
+
+        // 11. 크레딧 재생 후 15초 뒤에 타이틀 씬으로 전환
+        yield return new WaitForSeconds(7f);
+        SceneManager.LoadScene("Title"); // ← 씬 이름 정확히 입력
     }
 
     // 📌 플레이어 위치를 일정 시간 동안 offset만큼 이동시키는 함수
