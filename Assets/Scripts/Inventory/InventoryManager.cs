@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -44,6 +45,7 @@ public class InventoryManager : MonoBehaviour
             Button btn = slotGO.GetComponent<Button>();
             if (btn != null)
                 btn.onClick.AddListener(() => EquipItem(item));
+            Debug.Log("Add Item");
         }
     }
 
@@ -76,5 +78,10 @@ public class InventoryManager : MonoBehaviour
             inventoryUI.transform.rotation = Quaternion.LookRotation(cameraTransform.forward);
             inventoryUI.transform.localScale = Vector3.one * uiScale;
         }
+    }
+    
+    public bool HasItem(string itemName)
+    {
+        return inventoryItems.Any(item => item.itemName == itemName);
     }
 }

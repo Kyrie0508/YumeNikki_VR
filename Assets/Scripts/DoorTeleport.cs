@@ -6,6 +6,9 @@ public class DoorTeleport : MonoBehaviour
 {
     public string nextSceneName;
     public AudioClip doorOpenSound;
+    public string requiredItemName = "식칼";
+
+    public GameObject dialogueUIPrefab; 
 
     private FadeController fadeController;
     private AudioSource audioSource;
@@ -14,24 +17,22 @@ public class DoorTeleport : MonoBehaviour
     {
         fadeController = FindObjectOfType<FadeController>();
         audioSource = GetComponent<AudioSource>();
-        Debug.Log("[DoorTeleport] 초기화 완료.");
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"[DoorTeleport] 충돌 감지: {other.name}");
-
         if (other.CompareTag("Player"))
         {
-            Debug.Log("[DoorTeleport] 플레이어와 충돌 감지됨. 이동 제한 및 씬 전환 시퀀스 시작.");
+            // 아이템 보유 여부 확인
+            if (!InventoryManager.Instance.HasItem(requiredItemName))
+            {
+                ShowDialogue($"{requiredItemName}이(가) 없어 이동할 수 없습니다.");
+                return;
+            }
 
-            // CapsuleFollower 끄기 (이동 제한)
             CapsuleFollower follower = other.GetComponent<CapsuleFollower>();
             if (follower != null)
-            {
                 follower.canMove = false;
-                Debug.Log("[DoorTeleport] 플레이어 이동 비활성화 완료.");
-            }
 
             StartCoroutine(TeleportSequence());
         }
@@ -40,18 +41,27 @@ public class DoorTeleport : MonoBehaviour
     private IEnumerator TeleportSequence()
     {
         if (doorOpenSound != null && audioSource != null)
-        {
-            Debug.Log("[DoorTeleport] 문 여는 사운드 재생.");
             audioSource.PlayOneShot(doorOpenSound);
-        }
 
         if (fadeController != null)
-        {
-            Debug.Log("[DoorTeleport] 페이드 아웃 시작.");
             yield return StartCoroutine(fadeController.FadeOut());
-        }
 
-        Debug.Log($"[DoorTeleport] 씬 전환 시작: {nextSceneName}");
         SceneManager.LoadScene(nextSceneName);
+    }
+
+    private void ShowDialogue(string message)
+    {
+        if (dialogueUIPrefab == null || Camera.main == null) return;
+
+        GameObject dialogueGO = Instantiate(dialogueUIPrefab);
+        Transform cam = Camera.main.transform;
+
+        dialogueGO.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 1.5f;
+        dialogueGO.transform.rotation = Quaternion.LookRotation(dialogueGO.transform.position - cam.position);
+        dialogueGO.transform.localScale = Vector3.one * 0.0025f;
+
+        DialogueUIController controller = dialogueGO.GetComponent<DialogueUIController>();
+        if (controller != null)
+            controller.StartDialogue(message);
     }
 }

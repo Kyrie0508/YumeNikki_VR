@@ -3792,6 +3792,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: class_nikki
   doorOpenSound: {fileID: 8300000, guid: 1106249ff296b0a4b94e936726c833f4, type: 3}
+  requiredItemName: "\uC2DD\uCE7C"
+  dialogueUIPrefab: {fileID: 2011912177755314863, guid: f97cc4e1d130b39448007c7a967158db,
+    type: 3}
 --- !u!82 &860129202
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9557,6 +9560,58 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 917879379}
   m_SourcePrefab: {fileID: 100100000, guid: 4b30a538401fa8c4f81f8aacda48f9e1, type: 3}
+--- !u!1 &1713151602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713151604}
+  - component: {fileID: 1713151603}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1713151603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713151602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdc2f3d34027994bad289a0151db9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 0}
+  cameraTransform: {fileID: 1682577301}
+  offsetFromCamera: {x: 0, y: -0.2, z: 2.5}
+  uiScale: 0.02
+  slotContainer: {fileID: 0}
+  slotPrefab: {fileID: 3775654658530429706, guid: 884f819622c5c164c8d588021a81cd8a,
+    type: 3}
+  itemHolder: {fileID: 0}
+--- !u!4 &1713151604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713151602}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.46131518, y: 0.6092239, z: -1.4129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1723769851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4b30a538401fa8c4f81f8aacda48f9e1,
@@ -16278,4 +16333,5 @@ SceneRoots:
   - {fileID: 860129198}
   - {fileID: 1809821021}
   - {fileID: 876094019}
+  - {fileID: 1713151604}
   - {fileID: 23329454}
