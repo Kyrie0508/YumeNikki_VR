@@ -6,35 +6,52 @@ public class DoorTeleport : MonoBehaviour
 {
     public string nextSceneName;
     public AudioClip doorOpenSound;
-    public string requiredItemName = "식칼";
 
-    public GameObject dialogueUIPrefab; 
+    public GameObject dialogueUIPrefab;
 
+    private string currentSceneName;
     private FadeController fadeController;
     private AudioSource audioSource;
 
     private void Start()
     {
-        fadeController = FindObjectOfType<FadeController>();
+        fadeController = FindAnyObjectByType<FadeController>();
         audioSource = GetComponent<AudioSource>();
+        currentSceneName = SceneManager.GetActiveScene().name;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player"))
+            return;
+
+        string requiredItemName = GetRequiredItemForScene(currentSceneName);
+        
+        if (!string.IsNullOrEmpty(requiredItemName) && !InventoryManager.Instance.HasItem(requiredItemName))
         {
-            // 아이템 보유 여부 확인
-            if (!InventoryManager.Instance.HasItem(requiredItemName))
-            {
-                ShowDialogue($"{requiredItemName}이(가) 없어 이동할 수 없습니다.");
-                return;
-            }
+            ShowDialogue($"{requiredItemName}이 없어 이동할 수 없습니다.");
+            return;
+        }
 
-            CapsuleFollower follower = other.GetComponent<CapsuleFollower>();
-            if (follower != null)
-                follower.canMove = false;
+        CapsuleFollower follower = other.GetComponent<CapsuleFollower>();
+        if (follower != null)
+            follower.canMove = false;
 
-            StartCoroutine(TeleportSequence());
+        StartCoroutine(TeleportSequence());
+    }
+
+    private string GetRequiredItemForScene(string sceneName)
+    {
+        switch (sceneName)
+        {
+            case "ROAD MAP":
+                return "랜턴";
+            case "Basic Room Dream":
+                return "식칼";
+            case "class_nikki":
+                return "벨";
+            default:
+                return null; 
         }
     }
 
@@ -56,7 +73,7 @@ public class DoorTeleport : MonoBehaviour
         GameObject dialogueGO = Instantiate(dialogueUIPrefab);
         Transform cam = Camera.main.transform;
 
-        dialogueGO.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 1.5f;
+        dialogueGO.transform.position = cam.position + cam.forward * 1.5f;
         dialogueGO.transform.rotation = Quaternion.LookRotation(dialogueGO.transform.position - cam.position);
         dialogueGO.transform.localScale = Vector3.one * 0.0025f;
 
