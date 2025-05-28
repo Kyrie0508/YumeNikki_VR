@@ -5408,6 +5408,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: DoorNikki
   doorOpenSound: {fileID: 0}
+  requiredItemName: "\uC2DD\uCE7C"
+  dialogueUIPrefab: {fileID: 0}
 --- !u!65 &1929108979
 BoxCollider:
   m_ObjectHideFlags: 0
