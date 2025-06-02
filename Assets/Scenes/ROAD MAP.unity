@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 217321505}
   - component: {fileID: 217321504}
   m_Layer: 0
-  m_Name: XR Origin (XR Rig)
+  m_Name: XR Origin
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1010,6 +1010,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1501659727}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &307234049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 307234051}
+  - component: {fileID: 307234050}
+  m_Layer: 0
+  m_Name: RoomSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &307234050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307234049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47395fc8a792eda45ab39c8e42270120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - spawnPointName: Spawn_FromRoom1
+    point: {fileID: 932895605}
+  - spawnPointName: Spawn_FromRoom3
+    point: {fileID: 849035589}
+--- !u!4 &307234051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307234049}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.0282, y: -13.92644, z: 36.438534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 932895605}
+  - {fileID: 849035589}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320593660 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4b30a538401fa8c4f81f8aacda48f9e1,
@@ -3542,6 +3593,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 6.1232336e-17}
   m_Center: {x: 0, y: -0.000000023748726, z: 0}
+--- !u!1 &849035588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 849035589}
+  m_Layer: 0
+  m_Name: Spawn_FromRoom3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &849035589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849035588}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 157.26, y: 16.59, z: -32.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 307234051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &859535091
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,9 +3872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930db370db2e538408f8d62239a46173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: class_nikki
+  nextSceneName: Graffiti World
+  targetSpawnPointName: Spawn_FromRoom1
   doorOpenSound: {fileID: 8300000, guid: 1106249ff296b0a4b94e936726c833f4, type: 3}
-  requiredItemName: "\uC2DD\uCE7C"
   dialogueUIPrefab: {fileID: 2011912177755314863, guid: f97cc4e1d130b39448007c7a967158db,
     type: 3}
 --- !u!82 &860129202
@@ -4246,6 +4328,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1910341591}
   m_SourcePrefab: {fileID: 100100000, guid: 19f535191901b8f4cadc26f7ebcff86a, type: 3}
+--- !u!1 &932895604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932895605}
+  m_Layer: 0
+  m_Name: Spawn_FromRoom1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &932895605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932895604}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.76, y: 15.96, z: -34.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 307234051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &945019549
 GameObject:
   m_ObjectHideFlags: 0
@@ -7361,7 +7474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4337050113896650, guid: b571015d967a73b4cadb57317d7d0547, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47.92
+      value: -36
       objectReference: {fileID: 0}
     - target: {fileID: 4337050113896650, guid: b571015d967a73b4cadb57317d7d0547, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7452,8 +7565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: WhiteDesert
+  targetSpawnPointName: Spawn_FromRoom3
   doorOpenSound: {fileID: 8300000, guid: 1106249ff296b0a4b94e936726c833f4, type: 3}
-  requiredItemName: "\uC2DD\uCE7C"
   dialogueUIPrefab: {fileID: 0}
 --- !u!4 &1291011949 stripped
 Transform:
@@ -16456,3 +16569,4 @@ SceneRoots:
   - {fileID: 1713151604}
   - {fileID: 23329454}
   - {fileID: 1290893317}
+  - {fileID: 307234051}

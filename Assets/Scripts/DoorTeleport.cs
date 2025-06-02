@@ -4,12 +4,11 @@ using System.Collections;
 
 public class DoorTeleport : MonoBehaviour
 {
-    public string nextSceneName;
+    public string nextSceneName;              // 이동할 씬 이름
+    public string targetSpawnPointName;       // 다음 씬에서 리스폰할 지점 이름
     public AudioClip doorOpenSound;
-
     public GameObject dialogueUIPrefab;
 
-    private string currentSceneName;
     private FadeController fadeController;
     private AudioSource audioSource;
 
@@ -17,7 +16,6 @@ public class DoorTeleport : MonoBehaviour
     {
         fadeController = FindAnyObjectByType<FadeController>();
         audioSource = GetComponent<AudioSource>();
-        currentSceneName = SceneManager.GetActiveScene().name;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,14 +23,7 @@ public class DoorTeleport : MonoBehaviour
         if (!other.CompareTag("Player"))
             return;
 
-        string requiredItemName = GetRequiredItemForScene(currentSceneName);
-        
-        if (!string.IsNullOrEmpty(requiredItemName) && !InventoryManager.Instance.HasItem(requiredItemName))
-        {
-            ShowDialogue($"{requiredItemName}이 없어 이동할 수 없습니다.");
-            return;
-        }
-
+        // CapsuleFollower 비활성화 (선택사항)
         CapsuleFollower follower = other.GetComponent<CapsuleFollower>();
         if (follower != null)
             follower.canMove = false;
@@ -40,29 +31,21 @@ public class DoorTeleport : MonoBehaviour
         StartCoroutine(TeleportSequence());
     }
 
-    private string GetRequiredItemForScene(string sceneName)
-    {
-        switch (sceneName)
-        {
-            case "ROAD MAP":
-                return "랜턴";
-            case "Basic Room Dream":
-                return "식칼";
-            case "class_nikki":
-                return "벨";
-            default:
-                return null; 
-        }
-    }
-
     private IEnumerator TeleportSequence()
     {
+        // 문 열리는 사운드
         if (doorOpenSound != null && audioSource != null)
             audioSource.PlayOneShot(doorOpenSound);
 
+        // 페이드 아웃
         if (fadeController != null)
             yield return StartCoroutine(fadeController.FadeOut());
 
+        // 현재 씬 이름과 다음 씬 리스폰 위치 저장
+        SceneTransitionManager.LastSceneName = SceneManager.GetActiveScene().name;
+        SceneTransitionManager.NextSpawnPointName = targetSpawnPointName;
+
+        // 씬 이동
         SceneManager.LoadScene(nextSceneName);
     }
 
