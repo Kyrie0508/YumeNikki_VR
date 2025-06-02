@@ -1,43 +1,33 @@
 using UnityEngine;
-using System.Collections;
 
-[RequireComponent(typeof(MeshRenderer), typeof(AudioSource))]
-public class TVFlickerPlane : MonoBehaviour
+public class TVFlicker : MonoBehaviour
 {
-    public Texture2D noiseImage;        // jpg ≈ÿΩ∫√≥
-    public float minInterval = 0.1f;
-    public float maxInterval = 0.3f;
+    public float minInterval = 0.05f; 
+    public float maxInterval = 0.2f; 
 
-    private MeshRenderer rend;
-    private Material mat;
-    private AudioSource audioSrc;
+    private float timer = 0f;
+    private float nextBlinkTime;
+    private Renderer rend;
 
     void Start()
     {
-        rend = GetComponent<MeshRenderer>();
-        audioSrc = GetComponent<AudioSource>();
-
-       
-        mat = new Material(Shader.Find("Unlit/Texture"));
-        mat.mainTexture = noiseImage;
-        rend.material = mat;
-
-        rend.enabled = false;
-        StartCoroutine(Flicker());
+        rend = GetComponent<Renderer>();
+        SetNextBlinkTime();
     }
 
-    IEnumerator Flicker()
+    void Update()
     {
-        while (true)
+        timer += Time.deltaTime;
+        if (timer >= nextBlinkTime)
         {
-            bool on = Random.value > 0.5f;
-
-            rend.enabled = on;
-
-            if (on) audioSrc.UnPause();
-            else audioSrc.Pause();
-
-            yield return new WaitForSeconds(Random.Range(minInterval, maxInterval));
+            rend.enabled = !rend.enabled;
+            timer = 0f;
+            SetNextBlinkTime(); 
         }
+    }
+
+    void SetNextBlinkTime()
+    {
+        nextBlinkTime = Random.Range(minInterval, maxInterval);
     }
 }
