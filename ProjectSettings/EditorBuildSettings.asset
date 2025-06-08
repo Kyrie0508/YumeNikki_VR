@@ -43,13 +43,16 @@ EditorBuildSettings:
     guid: 7ce3802b1eaa4b84aa511d1771c6cd98
   - enabled: 1
     path: Assets/Scenes/Character.unity
-    guid: 0a46a7a4b7cea8541855f0c259ce6860
-  - enabled: 1
+    guid: 06b75ccb891bbe04798971f4f4a8dffc
+  - enabled: 0
     path: Assets/Scenes/CharacterMove.unity
     guid: 6df531c93c774af4d820d01ea41973f0
   - enabled: 1
     path: Assets/Scenes/tracking.unity
     guid: 3db062f7421cdda4faf42dcd5a9faa26
+  - enabled: 1
+    path: Assets/Scenes/Ending Outside.unity
+    guid: 75ab7e446ab70e547afb7fb02b90f15a
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8ed8f8eb7ffea43b17b4f28c0781ae,
       type: 2}
