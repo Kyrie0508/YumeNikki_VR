@@ -54,6 +54,8 @@ EditorBuildSettings:
     path: Assets/Scenes/CharacterMove.unity
     guid: 6df531c93c774af4d820d01ea41973f0
   m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8ed8f8eb7ffea43b17b4f28c0781ae,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5123488f31a3a0945a92e13681041de6,
