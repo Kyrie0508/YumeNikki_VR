@@ -836,7 +836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: Basic Room Dream
-  targetSpawnPointName: Spawn_FromRoom3
+  targetSpawnPointName: Spawn_FromRoom1
   doorOpenSound: {fileID: 8300000, guid: 1106249ff296b0a4b94e936726c833f4, type: 3}
   dialogueUIPrefab: {fileID: 0}
 --- !u!65 &245679413
@@ -1161,8 +1161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930db370db2e538408f8d62239a46173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Graffiti World
-  targetSpawnPointName: 
+  nextSceneName: WhiteDesert
+  targetSpawnPointName: Spawn_FromRoom1
   doorOpenSound: {fileID: 8300000, guid: 1106249ff296b0a4b94e936726c833f4, type: 3}
   dialogueUIPrefab: {fileID: 0}
 --- !u!65 &488905147
@@ -1560,9 +1560,9 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f,
+    m_Reference: {fileID: -1938091005641498236, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
-  nextSceneName: WhiteDesert
+  nextSceneName: ROAD MAP
 --- !u!4 &564795588
 Transform:
   m_ObjectHideFlags: 0
@@ -3024,7 +3024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48a1cb2088c2b540b82ce6010159e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 221339911}
   canMove: 1
 --- !u!4 &1273511732 stripped
 Transform:
@@ -4693,7 +4693,7 @@ Transform:
   m_GameObject: {fileID: 1746919743}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.37, y: 1.48, z: -2.817}
+  m_LocalPosition: {x: 11.66, y: 1.48, z: 0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4726,7 +4726,7 @@ PrefabInstance:
     - target: {fileID: 1694388104871467657, guid: 678bf8bc91771fa498236de892b83d1d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 11.52
       objectReference: {fileID: 0}
     - target: {fileID: 1694388104871467657, guid: 678bf8bc91771fa498236de892b83d1d,
         type: 3}

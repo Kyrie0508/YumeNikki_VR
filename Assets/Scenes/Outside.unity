@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48a1cb2088c2b540b82ce6010159e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 1475108062}
   canMove: 1
 --- !u!4 &229306295 stripped
 Transform:
@@ -1360,7 +1360,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f,
+    m_Reference: {fileID: -1938091005641498236, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   nextSceneName: Basic Room Dream
 --- !u!4 &654122342
