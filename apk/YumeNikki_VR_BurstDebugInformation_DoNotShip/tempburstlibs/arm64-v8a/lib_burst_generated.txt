@@ -9,7 +9,6 @@ Library: C:\Users\noname\YumeNikki\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\noname\YumeNikki\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.60f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\noname\YumeNikki\Library\Burst
 --output=C:\Users\noname\YumeNikki\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -102,7 +101,6 @@ Library: C:\Users\noname\YumeNikki\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_
 --float-mode=Fast
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\noname\YumeNikki\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.60f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\noname\YumeNikki\Library\Burst
 --output=C:\Users\noname\YumeNikki\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated

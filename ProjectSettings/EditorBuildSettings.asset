@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/WhiteDesert.unity
     guid: 7ce3802b1eaa4b84aa511d1771c6cd98
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ROAD MAP.unity
     guid: 63a1c1f1322664a40b0e57e4cf05cf96
   - enabled: 0
@@ -35,7 +35,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Ideal Room.unity
     guid: b6bcb41ed4824c948b75491fa7a8cb99
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Eyeball World.unity
     guid: 83fb8e278fab7234f82e05c97eff5658
   - enabled: 0
