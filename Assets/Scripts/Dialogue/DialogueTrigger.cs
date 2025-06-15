@@ -8,8 +8,8 @@ public class DialogueTrigger : MonoBehaviour
     public Vector3 offsetFromCamera = new Vector3(0, 0, 2f);
 
     [Header("대사 설정")]
-    [TextArea(2, 5)]
-    public string dialogueText = "이건 뭔가 수상한 느낌이야...";
+    [TextArea(2, 10)]
+    public string[] dialogueLines;
     public bool playOnSelect = true;
 
     private GameObject dialogueUIInstance;
@@ -55,6 +55,6 @@ public class DialogueTrigger : MonoBehaviour
 
         DialogueUIController controller = dialogueUIInstance.GetComponent<DialogueUIController>();
         if (controller != null)
-            controller.StartDialogue(dialogueText);
+            controller.StartDialogue(dialogueLines);
     }
 }

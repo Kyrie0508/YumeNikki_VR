@@ -19,7 +19,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject slotPrefab;
 
     [Header("Item Equip")]
-    public Transform itemHolder;
+    public Transform rightHandTransform; // 인스펙터에 아바타 오른손 할당
 
     private List<InventoryItem> inventoryItems = new List<InventoryItem>();
     private bool isVisible = false;
@@ -53,15 +53,18 @@ public class InventoryManager : MonoBehaviour
     {
         ClearCurrentItem();
 
-        if (item.prefab != null && itemHolder != null)
+        if (item.prefab != null && rightHandTransform != null)
         {
-            Instantiate(item.prefab, itemHolder.position, itemHolder.rotation, itemHolder);
+            GameObject equipped = Instantiate(item.prefab, rightHandTransform);
+            equipped.transform.localPosition = Vector3.zero; // 손에 맞게 조정 필요
+            equipped.transform.localRotation = Quaternion.identity;
         }
     }
 
+
     public void ClearCurrentItem()
     {
-        foreach (Transform child in itemHolder)
+        foreach (Transform child in rightHandTransform)
             Destroy(child.gameObject);
     }
 

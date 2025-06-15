@@ -11,7 +11,7 @@ public class InventoryToggleController : MonoBehaviour
     public float uiScale = 0.0025f;
 
     [Header("XR Input Action")]
-    public InputActionProperty toggleAction; // 오른손 A버튼, 왼손 X버튼 등
+    public InputActionProperty toggleAction; 
 
     private bool isVisible = false;
 

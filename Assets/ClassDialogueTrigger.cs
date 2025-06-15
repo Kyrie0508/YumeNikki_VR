@@ -9,7 +9,7 @@ public class ClassDialogueTrigger : MonoBehaviour
 
     [Header("대사 설정")]
     [TextArea(2, 5)]
-    public string dialogueText = "... ... ...";
+    public string[] dialogueLines = { "... ... ..." };
     public bool playOnSelect = true;
 
     private GameObject dialogueUIInstance;
@@ -41,7 +41,7 @@ public class ClassDialogueTrigger : MonoBehaviour
         DialogueUIController controller = dialogueUIInstance.GetComponent<DialogueUIController>();
         if (controller != null)
         {
-            controller.StartDialogue(dialogueText);
+            controller.StartDialogue(dialogueLines);
         }
         else
         {

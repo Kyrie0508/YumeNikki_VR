@@ -21,20 +21,21 @@ public class PickupItem : MonoBehaviour
             prefab = itemData.prefab
         };
         InventoryManager.Instance.AddItem(itemCopy);
-        ShowDialogue(itemData.itemName + "을(를) 획득했다");
+        ShowDialogue(new string[] { itemData.itemName + "을(를) 획득했다" });
         Destroy(gameObject);
     }
 
-    private void ShowDialogue(string text)
+    private void ShowDialogue(string[] lines)
     {
         if (dialogueUIPrefab == null || Camera.main == null) return;
 
         GameObject dialogue = Instantiate(dialogueUIPrefab);
-        dialogue.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2.0f;
+        dialogue.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.5f;
         dialogue.transform.rotation = Quaternion.LookRotation(dialogue.transform.position - Camera.main.transform.position);
 
         DialogueUIController controller = dialogue.GetComponent<DialogueUIController>();
         if (controller != null)
-            controller.StartDialogue(text);
+            controller.StartDialogue(lines);
     }
+
 }

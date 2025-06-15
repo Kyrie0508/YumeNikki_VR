@@ -49,7 +49,7 @@ public class DoorTeleport : MonoBehaviour
         SceneManager.LoadScene(nextSceneName);
     }
 
-    private void ShowDialogue(string message)
+    private void ShowDialogue(string[] lines)
     {
         if (dialogueUIPrefab == null || Camera.main == null) return;
 
@@ -62,6 +62,6 @@ public class DoorTeleport : MonoBehaviour
 
         DialogueUIController controller = dialogueGO.GetComponent<DialogueUIController>();
         if (controller != null)
-            controller.StartDialogue(message);
+            controller.StartDialogue(lines);
     }
 }
