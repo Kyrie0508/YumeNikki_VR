@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 2764521116180664560}
   - component: {fileID: 5907601897700629670}
   - component: {fileID: 9011857020470963562}
+  - component: {fileID: -1825783236454884597}
   m_Layer: 5
   m_Name: TextUI
   m_TagString: Untagged
@@ -213,6 +214,25 @@ MonoBehaviour:
   typingSpeed: 0.05
   typingSFX: {fileID: 8300000, guid: eff9bdd5a9aa2ae4ea06ef66e36d153a, type: 3}
   audioSource: {fileID: 7922796342541885789}
+--- !u!114 &-1825783236454884597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497240473161131015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 1
+  m_CheckFor3DOcclusion: 1
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &5538686051654881841
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +412,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.339
   m_Pitch: 1
   Loop: 0
   Mute: 0

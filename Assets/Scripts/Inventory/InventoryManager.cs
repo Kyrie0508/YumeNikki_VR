@@ -9,7 +9,7 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager Instance;
 
     [Header("Inventory UI")]
-    public GameObject inventoryUI;                // Canvas_InventoryUI
+    public GameObject inventoryUI;                
     public Transform cameraTransform;
     public Vector3 offsetFromCamera = new Vector3(0, -0.2f, 2.5f);
     public float uiScale = 0.02f;
@@ -19,14 +19,27 @@ public class InventoryManager : MonoBehaviour
     public GameObject slotPrefab;
 
     [Header("Item Equip")]
-    public Transform rightHandTransform; // 인스펙터에 아바타 오른손 할당
+    public Transform rightHandTransform; 
+    public AudioClip equipSound;
+    public AudioSource audioSource; 
 
+    
     private List<InventoryItem> inventoryItems = new List<InventoryItem>();
+    private InventoryItem currentEquippedItem;
     private bool isVisible = false;
 
-    void Awake()
+    
+    private void Awake()
     {
-        if (Instance == null) Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void AddItem(InventoryItem item)
@@ -41,11 +54,13 @@ public class InventoryManager : MonoBehaviour
 
             icon.sprite = item.icon;
             name.text = item.itemName;
-
-            Button btn = slotGO.GetComponent<Button>();
+            
+            Button btn = slotGO.transform.Find("Icon").GetComponent<Button>();
             if (btn != null)
+            {
+                btn.onClick.RemoveAllListeners();
                 btn.onClick.AddListener(() => EquipItem(item));
-            Debug.Log("Add Item");
+            }
         }
     }
 
@@ -53,15 +68,23 @@ public class InventoryManager : MonoBehaviour
     {
         ClearCurrentItem();
 
-        if (item.prefab != null && rightHandTransform != null)
+        GameObject equipped = Instantiate(item.prefab, rightHandTransform);
+        equipped.transform.localPosition = Vector3.zero;
+        equipped.transform.localRotation = Quaternion.Euler(45, 0, 90);
+        equipped.transform.localScale = Vector3.one * 2.0f;
+        Collider col = equipped.GetComponentInChildren<Collider>();
+        if (col != null) col.isTrigger = true;
+
+        Rigidbody rb = equipped.GetComponentInChildren<Rigidbody>();
+        if (rb != null) rb.isKinematic = true;
+        
+        if (audioSource != null && equipSound != null)
         {
-            GameObject equipped = Instantiate(item.prefab, rightHandTransform);
-            equipped.transform.localPosition = Vector3.zero; // 손에 맞게 조정 필요
-            equipped.transform.localRotation = Quaternion.identity;
+            audioSource.PlayOneShot(equipSound);
         }
     }
-
-
+    
+    
     public void ClearCurrentItem()
     {
         foreach (Transform child in rightHandTransform)

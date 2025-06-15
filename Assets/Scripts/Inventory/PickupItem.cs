@@ -30,7 +30,7 @@ public class PickupItem : MonoBehaviour
         if (dialogueUIPrefab == null || Camera.main == null) return;
 
         GameObject dialogue = Instantiate(dialogueUIPrefab);
-        dialogue.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.5f;
+        dialogue.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 1.0f;
         dialogue.transform.rotation = Quaternion.LookRotation(dialogue.transform.position - Camera.main.transform.position);
 
         DialogueUIController controller = dialogue.GetComponent<DialogueUIController>();

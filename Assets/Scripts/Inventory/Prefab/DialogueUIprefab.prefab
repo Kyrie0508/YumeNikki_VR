@@ -120,6 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 2228383266669010713}
   typingSpeed: 0.05
+  typingSFX: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &8712076458108880935
 GameObject:
   m_ObjectHideFlags: 0

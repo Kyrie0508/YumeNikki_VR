@@ -63,6 +63,10 @@ public class DialogueUIController : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
 
+        // 타이핑 종료 시 효과음 정지
+        if (audioSource != null)
+            audioSource.Stop();
+
         isTyping = false;
         dialogueComplete = true;
     }

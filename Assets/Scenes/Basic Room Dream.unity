@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 16651730}
   - component: {fileID: 16651729}
   - component: {fileID: 16651728}
+  - component: {fileID: 16651731}
   m_Layer: 5
   m_Name: Canvas_InventoryUI
   m_TagString: Untagged
@@ -213,7 +214,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1879382102}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -226,6 +227,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &16651731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16651726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &21975627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -969,17 +987,17 @@ PrefabInstance:
     - target: {fileID: 3182301395864327050, guid: 3122a7e9143875f438263231f7cae836,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3182301395864327050, guid: 3122a7e9143875f438263231f7cae836,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3182301395864327050, guid: 3122a7e9143875f438263231f7cae836,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3182301395864327050, guid: 3122a7e9143875f438263231f7cae836,
         type: 3}
@@ -989,12 +1007,12 @@ PrefabInstance:
     - target: {fileID: 3182301395864327050, guid: 3122a7e9143875f438263231f7cae836,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.018
+      value: 0.973
       objectReference: {fileID: 0}
     - target: {fileID: 3182301395864327050, guid: 3122a7e9143875f438263231f7cae836,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.936
+      value: -2.869
       objectReference: {fileID: 0}
     - target: {fileID: 3182301395864327050, guid: 3122a7e9143875f438263231f7cae836,
         type: 3}
@@ -1078,7 +1096,8 @@ MonoBehaviour:
   itemData:
     itemName: "\uC2DD\uCE7C"
     icon: {fileID: 21300000, guid: 34666b61a9c0a604baf2ed5f37b9c0d0, type: 3}
-    prefab: {fileID: 225281867}
+    prefab: {fileID: 3182301395864686506, guid: 3122a7e9143875f438263231f7cae836,
+      type: 3}
   dialogueUIPrefab: {fileID: 2497240473161131015, guid: 1c80f3b9338096a459c47d4f8cdd3c03,
     type: 3}
 --- !u!65 &225281869
@@ -1100,8 +1119,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0017961265, y: 0.00009088693, z: 0.00026330777}
-  m_Center: {x: 0.0002658952, y: 0, z: -0.000013604278}
+  m_Size: {x: 0.0017961264, y: 0.00054483576, z: 0.0005172882}
+  m_Center: {x: 0.0002658952, y: -0.000038254355, z: -0.0000041028484}
 --- !u!54 &225281870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5385,7 +5404,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1529529011}
   - component: {fileID: 1529529010}
-  - component: {fileID: 1529529012}
   - component: {fileID: 1529529013}
   m_Layer: 0
   m_Name: EventSystem
@@ -5424,48 +5442,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1529529012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529529008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
-  m_ScrollDeltaPerTick: 6
 --- !u!114 &1529529013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5491,14 +5467,22 @@ MonoBehaviour:
   m_EnableXRInput: 1
   m_EnableMouseInput: 1
   m_EnableTouchInput: 1
-  m_PointAction: {fileID: 0}
-  m_LeftClickAction: {fileID: 0}
-  m_MiddleClickAction: {fileID: 0}
-  m_RightClickAction: {fileID: 0}
-  m_ScrollWheelAction: {fileID: 0}
-  m_NavigateAction: {fileID: 0}
-  m_SubmitAction: {fileID: 0}
-  m_CancelAction: {fileID: 0}
+  m_PointAction: {fileID: 2869410428622933342, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_LeftClickAction: {fileID: 1855836014308820768, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_MiddleClickAction: {fileID: -6289560987278519447, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_RightClickAction: {fileID: -2562941478296515153, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 5825226938762934180, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_NavigateAction: {fileID: -7967456002180160679, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_SubmitAction: {fileID: 3994978066732806534, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_CancelAction: {fileID: 2387711382375263438, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
   m_EnableBuiltinActionsAsFallback: 1
   m_EnableGamepadInput: 1
   m_EnableJoystickInput: 1
@@ -5516,6 +5500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1533944394}
   - component: {fileID: 1533944393}
+  - component: {fileID: 1533944395}
   m_Layer: 0
   m_Name: InventoryManager
   m_TagString: Untagged
@@ -5535,14 +5520,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcdc2f3d34027994bad289a0151db9ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryUI: {fileID: 1711407086}
+  inventoryUI: {fileID: 16651726}
   cameraTransform: {fileID: 1879382098}
   offsetFromCamera: {x: 0, y: 0, z: 2}
   uiScale: 0.02
   slotContainer: {fileID: 2050554895}
   slotPrefab: {fileID: 3775654658530429706, guid: 884f819622c5c164c8d588021a81cd8a,
     type: 3}
-  rightHandTransform: {fileID: 1969993869}
+  rightHandTransform: {fileID: 1942595673}
+  equipSound: {fileID: 8300000, guid: b24b8e761ae6d7549b63e5fb8e905d4a, type: 3}
+  audioSource: {fileID: 1533944395}
 --- !u!4 &1533944394
 Transform:
   m_ObjectHideFlags: 0
@@ -5558,6 +5545,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1533944395
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533944392}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.662
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1534928099 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3248982512684502177, guid: 6fe6a5df5ce28bc4fa5ad864a711723d,
@@ -6690,7 +6773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 240328875}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7254,7 +7337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUIPrefab: {fileID: 2497240473161131015, guid: 1c80f3b9338096a459c47d4f8cdd3c03,
     type: 3}
-  offsetFromCamera: {x: 0, y: 0, z: 2}
+  offsetFromCamera: {x: 0, y: 0, z: 1}
   dialogueLines:
   - "xxxx\uB144 xx\uC6D4 x\uC77C\n\uC911\uD559\uAD50\uC5D0 \uC785\uD559\uD558\uACE0
     \uB450\uB2EC\uC774 \uC9C0\uB0AC\uB2E4.\n"

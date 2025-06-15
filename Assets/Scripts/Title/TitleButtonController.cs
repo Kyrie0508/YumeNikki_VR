@@ -21,12 +21,7 @@ public class TitleButtonController : MonoBehaviour
         instructionPanel?.SetActive(true);
         instructionFlowController?.ResetFlow();
     }
-
-    public void OnDreamClicked()
-    {
-        Debug.Log("Dream button clicked (미구현)");
-    }
-
+    
     public void OnExitClicked()
     {
         Application.Quit();

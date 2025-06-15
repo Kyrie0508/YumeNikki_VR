@@ -48,7 +48,7 @@ public class DialogueTrigger : MonoBehaviour
         }
 
         Transform cam = Camera.main.transform;
-        Vector3 pos = cam.position + cam.TransformDirection(offsetFromCamera);
+        Vector3 pos = cam.position + cam.TransformDirection(offsetFromCamera) * 2.0f;
         dialogueUIInstance.transform.position = pos;
         dialogueUIInstance.transform.LookAt(cam);
         dialogueUIInstance.transform.rotation = Quaternion.LookRotation(dialogueUIInstance.transform.position - cam.position);
