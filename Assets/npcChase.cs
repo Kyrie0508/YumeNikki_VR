@@ -5,7 +5,7 @@ public class NPCChaseController : MonoBehaviour
 {
     public Transform player;
     public float chaseDistance = 5f;
-    public float stopDistance = 10f;
+    public float stopDistance = 7.5f;
 
     public Vector3[] patrolPoints ;
     private int currentIndex = 0;
@@ -13,15 +13,23 @@ public class NPCChaseController : MonoBehaviour
     private NavMeshAgent agent;
     private Vector3 originPosition;
 
-    private enum State { Idle, Chasing, Returning }
-    private State currentState = State.Idle;
+    public enum NPCState { Idle, Chasing, Returning, Talking }
+    public NPCState currentState = NPCState.Idle;
     private Animator animator;
+
+    public float maxBlur = 5f;
+    public float duration = 5f;
+    public Material blurMaterial;
+    public ClassDialogueTrigger classDialogueTrigger;
+    public SuperBlurController blurController;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         originPosition = transform.position;
+
+        animator.SetBool("isWalk", true);
 
         patrolPoints = new Vector3[]
         {
@@ -30,15 +38,21 @@ public class NPCChaseController : MonoBehaviour
             new Vector3(64f, transform.position.y, 28f),
             new Vector3(45f, transform.position.y, 28f),
         };
+
+        if (blurController == null)
+            blurController = GetComponent<SuperBlurController>();
+        
+        if (classDialogueTrigger == null)
+            classDialogueTrigger = GetComponent<ClassDialogueTrigger>();
     }
 
     void Update()
-    {
+    {        
         float distance = Vector3.Distance(player.position, transform.position);
 
         switch (currentState)
         {
-            case State.Idle:
+            case NPCState.Idle:
                 if (patrolPoints.Length == 0) return;
                 if (!agent.pathPending && agent.remainingDistance < 0.25f)
                 {
@@ -46,30 +60,43 @@ public class NPCChaseController : MonoBehaviour
                     agent.SetDestination(patrolPoints[currentIndex]);
                 }
 
-                if (distance <= chaseDistance && player.position.x >= 33f)
+                if (distance <= chaseDistance && player.position.x >= 34f)
                 {
-                    currentState = State.Chasing;
+                    currentState = NPCState.Chasing;
                 }
                 break;
 
-            case State.Chasing:
-                if (distance > stopDistance || player.position.x < 33f)
+            case NPCState.Chasing:
+                if (distance < 3f)
                 {
-                    currentState = State.Returning;
+                    agent.SetDestination(transform.position);
+                    currentState = NPCState.Talking;
+                }
+                else if (distance > stopDistance || player.position.x < 34f)
+                {
+                    currentState = NPCState.Returning;
                 }
                 else
                 {
                     agent.SetDestination(player.position);
                 }
+
                 break;
 
-            case State.Returning:
+            case NPCState.Returning:
                 agent.SetDestination(originPosition);
                 if (Vector3.Distance(transform.position, originPosition) < 0.3f)
                 {
-                    currentState = State.Idle;
+                    currentState = NPCState.Idle;
                 }
                 break;
+            
+            case NPCState.Talking:
+                agent.isStopped = true;
+                animator.SetBool("isWalk", false);
+                classDialogueTrigger.ShowDialogue();
+                blurController.TriggerBlur();
+                return;
         }
     }
 }

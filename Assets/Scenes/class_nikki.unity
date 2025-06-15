@@ -37382,6 +37382,8 @@ GameObject:
   - component: {fileID: 1150974647}
   - component: {fileID: 1150974646}
   - component: {fileID: 1150974645}
+  - component: {fileID: 1150974649}
+  - component: {fileID: 1150974650}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -37616,6 +37618,42 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1150974649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150974643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7838e62a791b046878f53a76d41c9574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderMode: 0
+  kernelSize: 0
+  interpolation: 1
+  downsample: 1
+  iterations: 1
+  gammaCorrection: 1
+  blurMaterial: {fileID: 2100000, guid: d7ccde6efb0144c379690e506d6ad99d, type: 2}
+  UIMaterial: {fileID: 2100000, guid: faea72ae7158c49fe8c9a1179930cbe0, type: 2}
+--- !u!114 &1150974650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150974643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3941d404dba4d4a14a86e9265e0b775f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRadius: 5
+  duration: 5
+  blurMaterial: {fileID: 2100000, guid: d7ccde6efb0144c379690e506d6ad99d, type: 2}
+  nextSceneName: Ending Outside
 --- !u!4 &1151294861 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7b5be8be97fbb6a48b5088d513b348be,
@@ -57024,7 +57062,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de76d67d0ab88dc439b10b32370775ea,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1760846533}
+      addedObject: {fileID: 1760846543}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de76d67d0ab88dc439b10b32370775ea,
         type: 3}
       insertIndex: -1
@@ -57040,7 +57078,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de76d67d0ab88dc439b10b32370775ea,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1760846542}
+      addedObject: {fileID: 1760846546}
   m_SourcePrefab: {fileID: 100100000, guid: de76d67d0ab88dc439b10b32370775ea, type: 3}
 --- !u!1 &1760846531 stripped
 GameObject:
@@ -57048,23 +57086,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1760846530}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1760846533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760846531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3420732e63eceb4eb5d8c7625b8d08d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUIPrefab: {fileID: 2497240473161131015, guid: 1c80f3b9338096a459c47d4f8cdd3c03,
-    type: 3}
-  offsetFromCamera: {x: 0, y: 0, z: 2}
-  dialogueText: '"... ... ..."'
-  playOnSelect: 1
 --- !u!114 &1760846534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57180,9 +57201,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 27575215}
-  chaseDistance: 7.5
+  chaseDistance: 10
   stopDistance: 10
   patrolPoints: []
+  currentState: 0
+  maxBlur: 5
+  duration: 5
+  blurMaterial: {fileID: 2100000, guid: d7ccde6efb0144c379690e506d6ad99d, type: 2}
+  classDialogueTrigger: {fileID: 1760846543}
+  blurController: {fileID: 1150974650}
 --- !u!195 &1760846538
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -57228,7 +57255,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &1760846542
+--- !u!114 &1760846543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57237,13 +57264,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1760846531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 930db370db2e538408f8d62239a46173, type: 3}
+  m_Script: {fileID: 11500000, guid: f698e1f5cb6a14280ad3e8a25eea1e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: DoorNikki
-  targetSpawnPointName: Spawn_FromRoom1
-  doorOpenSound: {fileID: 8300000, guid: 1106249ff296b0a4b94e936726c833f4, type: 3}
-  dialogueUIPrefab: {fileID: 0}
+  dialogueUIPrefab: {fileID: 2497240473161131015, guid: 1c80f3b9338096a459c47d4f8cdd3c03,
+    type: 3}
+  offsetFromCamera: {x: 0, y: 0, z: 2}
+  dialogueText: ... ... ...
+  playOnSelect: 1
+--- !u!114 &1760846546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760846531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85ce67b61b5646bd89216575d045ff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typingSpeed: 0.15
+  classDialogueText: {fileID: 0}
 --- !u!1001 &1765237274
 PrefabInstance:
   m_ObjectHideFlags: 0
