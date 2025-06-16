@@ -3,6 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -29,17 +30,12 @@ public class InventoryManager : MonoBehaviour
     private bool isVisible = false;
 
     
-    private void Awake()
+    void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (Instance != null) { Destroy(gameObject); return; }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     public void AddItem(InventoryItem item)
@@ -47,20 +43,26 @@ public class InventoryManager : MonoBehaviour
         if (!inventoryItems.Contains(item))
         {
             inventoryItems.Add(item);
+            CreateSlotUI(item);
+        }
+    }
 
-            GameObject slotGO = Instantiate(slotPrefab, slotContainer);
-            Image icon = slotGO.transform.Find("Icon").GetComponent<Image>();
-            TextMeshProUGUI name = slotGO.transform.Find("Name").GetComponent<TextMeshProUGUI>();
+    void CreateSlotUI(InventoryItem item)
+    {
+        if (slotContainer == null) return;
+        
+        GameObject slotGO = Instantiate(slotPrefab, slotContainer);
+        Image icon = slotGO.transform.Find("Icon").GetComponent<Image>();
+        TextMeshProUGUI name = slotGO.transform.Find("Name").GetComponent<TextMeshProUGUI>();
 
-            icon.sprite = item.icon;
-            name.text = item.itemName;
-            
-            Button btn = slotGO.transform.Find("Icon").GetComponent<Button>();
-            if (btn != null)
-            {
-                btn.onClick.RemoveAllListeners();
-                btn.onClick.AddListener(() => EquipItem(item));
-            }
+        icon.sprite = item.icon;
+        name.text = item.itemName;
+
+        Button btn = slotGO.transform.Find("Icon").GetComponent<Button>();
+        if (btn != null)
+        {
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(() => EquipItem(item));
         }
     }
 
@@ -68,23 +70,29 @@ public class InventoryManager : MonoBehaviour
     {
         ClearCurrentItem();
 
-        GameObject equipped = Instantiate(item.prefab, rightHandTransform);
-        equipped.transform.localPosition = Vector3.zero;
-        equipped.transform.localRotation = Quaternion.Euler(45, 0, 90);
-        equipped.transform.localScale = Vector3.one * 2.0f;
-        Collider col = equipped.GetComponentInChildren<Collider>();
-        if (col != null) col.isTrigger = true;
-
-        Rigidbody rb = equipped.GetComponentInChildren<Rigidbody>();
-        if (rb != null) rb.isKinematic = true;
-        
-        if (audioSource != null && equipSound != null)
+        if (item.prefab != null && rightHandTransform != null)
         {
-            audioSource.PlayOneShot(equipSound);
+            if (item.itemName == "식칼")
+            {
+                GameObject equipped = Instantiate(item.prefab, rightHandTransform);
+                equipped.transform.localPosition = Vector3.zero;
+                equipped.transform.localRotation = Quaternion.Euler(45, 0, 90);
+                equipped.transform.localScale = Vector3.one * 2.0f;
+
+                Collider col = equipped.GetComponentInChildren<Collider>();
+                if (col != null) col.isTrigger = true;
+
+                Rigidbody rb = equipped.GetComponentInChildren<Rigidbody>();
+                if (rb != null) rb.isKinematic = true;
+
+                currentEquippedItem = item;
+            }
+
+            if (audioSource != null && equipSound != null)
+                audioSource.PlayOneShot(equipSound);
         }
     }
-    
-    
+
     public void ClearCurrentItem()
     {
         foreach (Transform child in rightHandTransform)
@@ -105,9 +113,37 @@ public class InventoryManager : MonoBehaviour
             inventoryUI.transform.localScale = Vector3.one * uiScale;
         }
     }
-    
+
     public bool HasItem(string itemName)
     {
         return inventoryItems.Any(item => item.itemName == itemName);
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        inventoryUI = GameObject.Find("Canvas_InventoryUI");
+        slotContainer = GameObject.Find("SlotContainer")?.transform;
+        rightHandTransform = GameObject.Find("Fingers2R")?.transform;
+        cameraTransform = Camera.main?.transform;
+
+        if (slotContainer != null)
+        {
+            foreach (Transform child in slotContainer)
+                Destroy(child.gameObject);
+
+            foreach (var item in inventoryItems)
+                CreateSlotUI(item);
+        }
+
+        if (currentEquippedItem != null)
+        {
+            EquipItem(currentEquippedItem);
+        }
+
+        if (inventoryUI != null)
+        {
+            inventoryUI.SetActive(false);
+            isVisible = false;
+        }
     }
 }

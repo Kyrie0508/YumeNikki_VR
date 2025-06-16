@@ -3240,7 +3240,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1879382102}
   m_PlaneDistance: 0.3
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -7337,7 +7337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUIPrefab: {fileID: 2497240473161131015, guid: 1c80f3b9338096a459c47d4f8cdd3c03,
     type: 3}
-  offsetFromCamera: {x: 0, y: 0, z: 1}
+  offsetFromCamera: {x: 0, y: 0, z: 0.7}
   dialogueLines:
   - "xxxx\uB144 xx\uC6D4 x\uC77C\n\uC911\uD559\uAD50\uC5D0 \uC785\uD559\uD558\uACE0
     \uB450\uB2EC\uC774 \uC9C0\uB0AC\uB2E4.\n"
