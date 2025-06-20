@@ -1632,7 +1632,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -1938091005641498236, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
-  nextSceneName: ROAD MAP
+  nextSceneName: WhiteDesert
 --- !u!4 &564795588
 Transform:
   m_ObjectHideFlags: 0
